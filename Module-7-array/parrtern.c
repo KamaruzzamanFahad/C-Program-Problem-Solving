@@ -25,16 +25,37 @@ int main(){
     // }
 
 
-    int n= 5;
+    // int n= 5;
 
-    for(int i=1; i<=n; i++){
+    // for(int i=1; i<=n; i++){
 
-        for(int j=n; j<; j++){
-            printf("* ");
-        }
-        // for(int j=1; j<=i; j++){
-        //     printf("* ");
-        // }
-        printf("\n");
+    //     for(int j=n; j<; j++){
+    //         printf("* ");
+    //     }
+    //     // for(int j=1; j<=i; j++){
+    //     //     printf("* ");
+    //     // }
+    //     printf("\n");
+    // }
+
+
+
+    int N;
+    scanf("%d", &N);
+    int arr[N];
+    int sum=0;
+
+    for(int i=0; i<N; i++){
+        scanf("%d", &arr[i]);
     }
+    
+     for(int i=0; i<N; i++){
+        sum = sum+arr[i];
+    }
+    if(sum < 0){
+        printf("%d", sum*-1);
+    }else{
+    printf("%d", sum);
+    }
+
 }
