@@ -6,7 +6,7 @@
             printf("hello ");
         }
         if (x == 5) {
-            printf("hi");
+            printf("hello");
         }
         else {
             printf("no");
