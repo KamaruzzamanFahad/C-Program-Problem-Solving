@@ -1,20 +1,21 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
     int N;
+    scanf("%d",&N); 
+    int *A= (int *)malloc(1 * sizeof(int)); 
+    for (int i = 0; i < N; i++) {
+        int num;
+        scanf("%d", &num);
 
-    scanf("%d", &N);
-    int len=1;
-    int A[len];
-
-    for(int i=0; i<N; i++){
-        len++;
-        scanf("%d", A[i]);
-        
+        A =(int *)realloc(A,(i+1)*sizeof(int));
+        A[i]= num;
     }
 
-    for(int i=0; i<N; i++){
+    for (int i=0; i<N; i++) {
         printf("%d ", A[i]);
-}
-
-
+    }
+    printf("\n");
+    free(A); 
+    return 0;
 }

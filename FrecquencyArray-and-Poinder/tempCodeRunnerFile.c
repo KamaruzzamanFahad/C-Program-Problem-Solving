@@ -1,4 +1,3 @@
-f(f[i] >0 ){
-        //     printf("%c : ", f[i] + 'a');
-        //     printf("%d\n", f[i]);
-        // }
+if (i<N -1) {
+            printf(" ");
+        }
